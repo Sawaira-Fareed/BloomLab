@@ -58,20 +58,22 @@ export default function SignupPage() {
   };
 
   const handleGoogleSignup = async () => {
-    setGoogleLoading(true);
-    setSignupError("");
-    try {
-      const { error } = await supabase.auth.signInWithOAuth({
-        provider: "google",
-        options: { redirectTo: `${window.location.origin}/garden` },
-      });
-      if (error) throw error;
-    } catch (err: any) {
-      setSignupError(err.message || "Google signup failed.");
-    } finally {
-      setGoogleLoading(false);
-    }
-  };
+  setGoogleLoading(true);
+  setSignupError("");
+  try {
+    const { error } = await supabase.auth.signInWithOAuth({
+      provider: "google",
+      options: { 
+        redirectTo: "https://flyrank-capstone-rosy.vercel.app/garden"
+      },
+    });
+    if (error) throw error;
+  } catch (err: any) {
+    setSignupError(err.message || "Google signup failed.");
+  } finally {
+    setGoogleLoading(false);
+  }
+};
 
   return (
     <div

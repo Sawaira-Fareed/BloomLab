@@ -19,9 +19,9 @@ The goal is simple: **turn learning into something you build, not something you 
 
 | Resource | Link |
 |----------|------|
-| ▶️ Main Demo Video | https://drive.google.com/file/d/1jG27MOanEfgjnmH6KiXiGwQ135nCCQQy/view?usp=sharing |
-| ▶️ Walkthrough 1 | https://drive.google.com/file/d/1ACiqYXD9fiBnLmFP3UcT9bQn2gCGgWl-/view?usp=sharing |
-| ▶️ Walkthrough 2 | https://drive.google.com/file/d/15HS-RGN1pNA9PDBUr9FbPK2YIdpwTKpT/view?usp=sharing |
+| ▶️ Main Demo Video | https://drive.google.com/file/d/1jG27MOanEfgjnmH6KiXiGwQ135nCCQQy/view?usp=drive_link |
+| ▶️ Walkthrough 1 | https://drive.google.com/file/d/1zTZbAp6npkIagKRhszeBZXlWcli4q6g_/view?usp=sharing |
+| ▶️ Walkthrough 2 | https://drive.google.com/file/d/15HS-RGN1pNA9PDBUr9FbPK2YIdpwTKpT/view?usp=drive_link |
 | 📄 SRS Document | https://docs.google.com/document/d/1ZGEtabTkID7Zm853HJJcpIsyRW5-bM-J/edit?usp=sharing |
 | 📄 Capstone Details | https://docs.google.com/document/d/17Xmu0OYGZs-7i9S4yo-fHzx4MpFAaTUW/edit?usp=sharing |
 

@@ -51,8 +51,8 @@ export default function Hero() {
               </GradientButton>
               </Link>
 
-              <a 
-  href="https://app.chatcut.io/v/I1feQ6h9A4ka" 
+            <a 
+  href="https://drive.google.com/file/d/1zTZbAp6npkIagKRhszeBZXlWcli4q6g_/view" 
   target="_blank"
   rel="noopener noreferrer"
   className="rounded-full border border-slate-200 bg-white/80 px-7 py-3.5 font-medium backdrop-blur transition hover:bg-white"

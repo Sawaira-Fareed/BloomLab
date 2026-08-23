@@ -47,21 +47,22 @@ export default function LoginPage() {
   };
 
   const handleGoogleLogin = async () => {
-    setGoogleLoading(true);
-    setLoginError("");
-    try {
-      const { error } = await supabase.auth.signInWithOAuth({
-        provider: "google",
-        options: { redirectTo: `${window.location.origin}/garden` },
-      });
-      if (error) throw error;
-    } catch (err: any) {
-      setLoginError(err.message || "Google login failed.");
-    } finally {
-      setGoogleLoading(false);
-    }
-  };
-
+  setGoogleLoading(true);
+  setLoginError("");
+  try {
+    const { error } = await supabase.auth.signInWithOAuth({
+      provider: "google",
+      options: { 
+        redirectTo: "https://flyrank-capstone-rosy.vercel.app/garden"
+      },
+    });
+    if (error) throw error;
+  } catch (err: any) {
+    setLoginError(err.message || "Google login failed.");
+  } finally {
+    setGoogleLoading(false);
+  }
+};
   return (
     <div
       className="relative min-h-screen w-full flex items-center overflow-hidden"
