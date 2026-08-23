@@ -51,7 +51,7 @@ function CertificatesPageContent() {
     const init = async () => {
       const { data: { user: authUser } } = await supabase.auth.getUser();
       if (!authUser) { setLoading(false); return; }
-      const { data: profile } = await supabase.from("users").select("*").eq("email", authUser.email).single();
+      const { data: profile } = await supabase.from("users").select("*").eq("id", authUser.id).single();
       setUser(profile || { name: authUser.email?.split("@")[0] || "Bloomer" });
       const all = await getUserProjects(authUser.id);
       setCompletedProjects(all.filter((p: any) => p.status === "completed" && (p.progress || 0) >= 100));

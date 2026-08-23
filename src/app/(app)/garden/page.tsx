@@ -46,8 +46,8 @@ export default function GardenPage() {
     const init = async () => {
       const { data: { user: authUser } } = await supabase.auth.getUser();
       if (!authUser) { setLoading(false); return; }
-      const { data: profile } = await supabase.from("users").select("*").eq("email", authUser.email).single();
-      setUser(profile || { name: authUser.email?.split("@")[0] || "Bloomer", email: authUser.email });
+      const { data: profile } = await supabase.from("users").select("*").eq("id", authUser.id).single();
+      setUser(profile || { id: authUser.id, name: authUser.email?.split("@")[0] || "Bloomer", email: authUser.email });
       if (profile) await loadData(profile.id);
       setLoading(false);
     };

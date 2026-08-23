@@ -19,7 +19,7 @@ export default function ProfilePage() {
     const load = async () => {
       const { data: { user: authUser } } = await supabase.auth.getUser();
       if (!authUser) { setLoading(false); return; }
-      const { data: profile } = await supabase.from("users").select("*").eq("email", authUser.email).single();
+      const { data: profile } = await supabase.from("users").select("*").eq("id", authUser.id).single();
       setUser(profile || { name: authUser.email?.split("@")[0] || "Bloomer", email: authUser.email || "" });
       if (profile) {
         if (profile.avatar_url) setAvatarUrl(profile.avatar_url);
