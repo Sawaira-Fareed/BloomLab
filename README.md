@@ -25,6 +25,10 @@ The goal is simple: **turn learning into something you build, not something you 
 | 📄 SRS Document | https://docs.google.com/document/d/1ZGEtabTkID7Zm853HJJcpIsyRW5-bM-J/edit?usp=sharing |
 | 📄 Capstone Details | https://docs.google.com/document/d/17Xmu0OYGZs-7i9S4yo-fHzx4MpFAaTUW/edit?usp=sharing |
 
+### BloomLab Landing Page
+
+![BloomLab landing page](docs/screenshots/bloomlab-landing-page.png)
+
 
 ## ✨ Features
 
